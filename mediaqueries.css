@@ -64,9 +64,13 @@
     .section__pic-container-about{
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 0 auto 2rem;
     z-index: 1;
     }
+    .section__pic-container-about img{
+      width: auto;
+      height: auto;
+      }
   }
   
   @media screen and (max-width: 600px) {
