@@ -62,8 +62,8 @@
         margin-bottom: 20px; /* Add margin below the container */
     }
     .section__pic-container-about{
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
     margin: 0 auto 2rem;
     z-index: 1;
     }
