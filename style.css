@@ -11,6 +11,8 @@ GENERAL
 
 body{
     font-family: 'Poppins',sans-serif;
+    display: column;
+   
 }
 html{
     scroll-behavior: smooth;
@@ -329,6 +331,7 @@ section{
 /*EXPERIENCE SECTION*/
 #experience {
   position: relative;
+  
 }
 
 .experience-sub-title {
@@ -364,61 +367,57 @@ article .icon {
     text-align: center;
   }
 
-/*PROJECTS SECTION*/
+
+
+/* PROJECTS SECTION */
 #projects {
-  position: relative;
+  padding: 50px 20px; /* Add padding to the top and bottom */
 }
 
 .about-containers {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribute items evenly */
-  margin: 0 -5px; /* Negative margin to offset the margin of the containers */
-  padding: 0 5px; /* Add padding to avoid horizontal scrolling */
+  justify-content: space-between;
+  margin: 0 -10px; /* Adjusted margin */
+  padding: 0 10px; /* Add padding to avoid horizontal scrolling */
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-  width: calc(18% - 10px); /* Maximum 4 containers per row with 10px gap */
-  margin: 5px; /* Gap between containers */
-  text-align: center; /* Center align text */
-  flex: 0 0 calc(18% - 10px); /* Fixed width for each container */
+  width: 250px; /* Fixed width for all containers */
+  margin: 20px 0; /* Increased margin for better spacing */
+  padding: 20px; /* Add padding */
+  text-align: center;
+  flex: 0 0 calc(25% - 20px); /* Fixed width, adjusts for responsive layout */
 }
 
-
 .project-img {
-  width: 100%; /* Make the image fill the container */
-  height: 150px; /* Set a fixed height for uniformity */
-  object-fit: cover; /* Crop images to fit container */
-  border-radius: 1rem; /* Add border-radius */
+  width: 100%;
+  height: 150px; /* Adjusted height */
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .project-title {
-  margin: 10px; /* Adjust margin */
+  margin: 10px 0; /* Adjusted margin */
   color: black;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-  display: block; /* Display button as block */
-  margin: 10px auto; /* Center align the button */
-  padding: 5px 10px; /* Add padding */
-  border-radius: 5px; /* Add border-radius */
+  display: block;
+  margin: 10px auto; /* Center the button horizontally */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
-/* Target the parent container of project containers */
 
-
-
-
-
-
-/* CONTACT SECTION*/
+/* CONTACT SECTION */
 #contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding-top: 40px; 
+  margin-top: 600px; /* Add margin to separate sections */
+  text-align: center; /* Center align content */
   height: 70vh;
 }
 
