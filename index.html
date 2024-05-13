@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mustafa Isić</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mustafa Isić</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilna slika.JPG" alt="Mustafa Isić profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mustafa Isić</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/Mustafa Isić CV.pdf')"
+              >
+                Download CV
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/mustafa-isi%C4%87-34478225a/?trk=opento_sprofile_details'"
+              />
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/mustafaisic000'"
+              />
+            </div>
+          </div>
+          <img src="./assets/arrow.png" 
+          alt="arrow icon" 
+          class="icon arrow"
+          onclick="location.href='./#about'">
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container-about">
+                <img src="./assets/druga slika.JPG" 
+                alt="Another picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon">
+                        <h3>Internship</h3>
+                        <p>9 weeks <br>Fullstack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Currently 4th year student at<br>Faculity of Information Technologies, Mostar</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I would describe myself as someone who has a creative mind and a big need for learning. Software development is something I'm passionate
+                        about. I love to solve challenges and understand things on a deeper level – that is precisely why I chose this field of
+                        study because those two things allow me to better myself. I am always open to
+                        communication and ready to learn from others. </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Key Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>Angular</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>C#</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>Figma</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>React</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="article-element"> 
+                                <img src="./assets/checkmark.png" alt="experience icon" 
+                                class="icon">
+                                <div>
+                                    <h3>Microsoft Office</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+             <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/screenshotPageSlika.JPG" 
+                    alt="Portfolio project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Portfolio</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://github.com/mustafaisic000/html-css-js-portfolio-page'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/ML python.JPG" 
+                    alt="Python project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Python projects</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://github.com/mustafaisic000/python-projects'"> 
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Display iot.JPG" 
+                    alt="IoT project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">IoT project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://github.com/mustafaisic000/lightbulb-ac'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Kategorije.JPG" 
+                    alt="Web-shop project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Web shop</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://github.com/mustafaisic000/webshop-fullstack'"> 
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Capture.JPG" 
+                    alt="React project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">React app</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://github.com/mustafaisic000/financial-app-react-tailwind'"> 
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/qa.JPG" 
+                    alt="QA project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">QA test cases</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://github.com/mustafaisic000/QA-test-case'"> 
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/figma.JPG" 
+                    alt="Figma project"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">App dizajn</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project.btn" 
+                    onclick="location.href='https://www.figma.com/file/qPaUp5lo4NW5Vm9G1AGx0Z/Umjetni%C4%8Dko-skladi%C5%A1te-HCI?type=design&node-id=33%3A444&mode=design&t=B3Y51kdp4cC2lEIQ-1'"> 
+                        Figma
+                    </button>
+                </div>
+            </div>
+        </div> 
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">musaisic@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/mustafa-isi%C4%87-34478225a/?trk=opento_sprofile_details">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mustafa Isić. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
